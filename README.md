@@ -192,4 +192,4 @@ F --> G[Power BI Dashboard<br/>Insights & Visualizations]
 This project was inspired by a YouTube tutorial created by **Mo Chen**, whose walkthrough helped shape the RFM scoring logic and project structure.
 
 **Original Tutorial:**  
-(https://www.youtube.com/watch?v=YOUR_LINK_HERE)](https://www.youtube.com/watch?v=Da960TW5tf4&t=82s)
+https://www.youtube.com/watch?v=Da960TW5tf4&t=93s
