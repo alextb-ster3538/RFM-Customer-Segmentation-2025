@@ -138,6 +138,10 @@ The goal is to understand customer behavior and value using RFM segmentation.
 
 ---
 
+<img width="1488" height="833" alt="RFM Dashboard" src="https://github.com/user-attachments/assets/f12b8649-d80a-46cb-bdb0-6fc5505241b9" />
+
+
+---
 ## 🔄 How to Reproduce
 1. Load the monthly sales tables into BigQuery.  
 2. Run the SQL scripts in the `/sql` folder in order.  
