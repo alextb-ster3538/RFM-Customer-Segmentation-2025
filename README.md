@@ -47,15 +47,16 @@ The goal is to understand customer behavior and value using RFM segmentation.
    Calculates recency, frequency, and monetary values per customer.
 
 3. **RFM Scores (`rfm_scores`)**  
-   Applies NTILE deciles to assign R, F, and M scores (1–10).
+   RFM scoring uses deciles (NTILE(10)) to rank customers relative to each other.
+   Higher scores = better performance (except recency, where lower days = higher score).
 
-4. **Total RFM Score (`rfm_total_scores`)**  
+5. **Total RFM Score (`rfm_total_scores`)**  
    Sums R, F, and M scores into a composite score.
 
-5. **Final Segments (`rfm_segments_final`)**  
+6. **Final Segments (`rfm_segments_final`)**  
    Maps customers into business‑friendly segments (Champions, VIP, At Risk, etc.).
 
-6. **Power BI Dashboard**  
+7. **Power BI Dashboard**  
    Visualizes segment distribution, revenue contribution, and customer‑level details.
 
 ---
@@ -67,47 +68,12 @@ The goal is to understand customer behavior and value using RFM segmentation.
 - **Data Engineering** — views, tables, pipeline design  
 - **Customer Analytics** — segmentation, scoring, insights  
 
----
+--- 
+## 📚 Additional Documentation
 
-## 🗂️ Data Dictionary
+- Data Dictionary - https://app.notion.com/p/Data-Dictionary-3ecf13f8ec65811ba1f7ebf8a9ce3060?source=copy_link 
+- RFM Segmentation Pipeline - https://app.notion.com/p/3ecf13f8ec6580b09a82d094bdfd53fd?v=3ecf13f8ec6580dd8d9c000c0920f6bb&source=copy_link 
 
-### `all_sales2025`
-| Field | Description |
-|-------|-------------|
-| OrderID | Unique order identifier |
-| CustomerID | Unique customer identifier |
-| OrderDate | Date of purchase |
-| ProductType | Product category |
-| OrderValue | Revenue per order |
-| string_field_5–7 | Additional attributes (NULL for most months) |
-
-### `rfm_metrics`
-| Field | Description |
-|-------|-------------|
-| CustomerID | Unique customer identifier |
-| last_order_date | Most recent purchase date |
-| recency | Days since last purchase |
-| frequency | Number of orders |
-| monetary | Total spend |
-
-### `rfm_scores`
-| Field | Description |
-|-------|-------------|
-| r_score | Recency decile score |
-| f_score | Frequency decile score |
-| m_score | Monetary decile score |
-
-### `rfm_total_scores`
-| Field | Description |
-|-------|-------------|
-| rfm_total_score | Combined RFM score (R+F+M) |
-
-### `rfm_segments_final`
-| Field | Description |
-|-------|-------------|
-| rfm_segment | Assigned customer segment |
-
----
 
 ## 📈 Key Insights from the Power BI Dashboard
 1. **High‑value customers form a strong revenue core**  
